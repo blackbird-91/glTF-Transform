@@ -2,7 +2,7 @@
 	"private": true,
 	"name": "gltf-transform",
 	"author": "Don McCurdy <dm@donmccurdy.com>",
-	"repository": "github:donmccurdy/glTF-Transform",
+	"repository": "github:blackbird-91/glTF-Transform",
 	"license": "MIT",
 	"workspaces": [
 		"packages/*"
@@ -26,7 +26,9 @@
 		"docs:deploy:prod": "[[ $(git describe --tags --abbrev=0) =~ ^v[0-9]+\\.[0-9]+\\.[0-9]+$ ]] && yarn docs:deploy --prod",
 		"docs:deploy": "yarn dist && vercel"
 	},
-	"dependencies": {},
+	"dependencies": {
+    "glTF-Transform": "https://github.com/blackbird-91/glTF-Transform"
+  },
 	"devDependencies": {
 		"@types/command-exists": "1.2.1",
 		"@types/draco3dgltf": "1.4.0",
