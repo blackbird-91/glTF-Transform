@@ -330,9 +330,10 @@ function createParams(
 		params.push('--assign_oetf', 'linear', '--assign_primaries', 'none');
 	}
 
-	if (channels === R) {
-		params.push('--target_type', 'R');
-	} else if (channels === G || channels === (R | G)) {
+	// if (channels === R) {
+	// 	params.push('--target_type', 'R');
+	// } else 
+	if (channels === G || channels === (R | G)) {
 		params.push('--target_type', 'RG');
 	}
 
